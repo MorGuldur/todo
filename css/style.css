@@ -21,7 +21,7 @@ header {
 
 header,
 form {
-	min-height: 20vh;
+	min-height: 15vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -33,6 +33,7 @@ form button {
 	font-size: 2rem;
 	border: none;
 	background: white;
+	min-height: 6vh;
 }
 
 form button {
@@ -47,17 +48,6 @@ form button:hover {
 	color: white;
 }
 
-.todo-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.todo-list {
-	min-width: 30%;
-	list-style: none;
-}
-
 .todo {
 	margin: 0.5rem;
 	background: white;
@@ -67,11 +57,32 @@ form button:hover {
 	justify-content: space-between;
 	align-items: center;
 	transition: all 0.3s ease;
+	min-height: 6vh;
 }
-
+.todo-input {
+	min-width: 37.5vw;
+	min-height: 6vh;
+}
+.todo-button {
+	min-width: 6vh;
+	min-height: 6vh;
+}
 .todo li {
 	flex: 1;
 }
+.todo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.todo-list {
+	min-width: 50vw;
+	list-style: none;
+}
+.todo-item {
+	padding: 0rem 0.5rem;
+}
+
 .trash-btn,
 .complete-btn {
 	background: #e97252;
@@ -80,14 +91,12 @@ form button:hover {
 	padding: 1rem;
 	cursor: pointer;
 	font-size: 1rem;
+	min-width: 6vh;
+	min-height: 6vh;
 }
 
 .complete-btn {
 	background: rgb(84, 228, 84);
-}
-
-.todo-item {
-	padding: 0rem 0.5rem;
 }
 
 .fa-trash,
@@ -114,13 +123,12 @@ select {
 }
 select {
 	color: #e97252;
-	width: 10rem;
+	width: 15vh;
 	cursor: pointer;
-	padding: 1rem;
+	padding: 0.5rem;
 }
-
 .select {
-	margin: 1rem;
+	margin-left: 3vh;
 	position: relative;
 	overflow: hidden;
 }
@@ -133,8 +141,15 @@ select {
 	padding: 1rem;
 	pointer-events: none;
 	transition: all 0.3s ease;
+	min-width: 1vw;
+	min-height: 6vh;
 }
 .select:hover::after {
 	background: white;
 	color: #e97252;
+	min-width: 1vw;
+	min-height: 6vh;
+}
+.filter-todo {
+	min-height: 6vh;
 }

@@ -1,0 +1,45 @@
+@media only screen and (max-width : 768px)  {
+
+	header {
+		font-size: 2rem;
+	}
+
+	.todo-list {
+		min-width: 87vw;
+	}
+}
+
+@media only screen and (max-width : 375px)  {
+
+form {
+	margin: 1rem;
+}
+
+	header {
+		font-size: 1.5rem;
+	}
+
+	.todo-input {
+		min-height: 8vh;
+		min-width: 40vw;
+	}
+
+	.todo-button {
+		min-width: 8vh;
+		min-height: 8vh;
+	}
+
+	.todo-list {
+		min-width: 95vw;
+	}
+
+	select {
+		width: 35vh;
+	}
+	.select {
+		margin-left: 2vh;
+	}
+	.filter-todo {
+		min-height: 8vh;
+	}
+}
